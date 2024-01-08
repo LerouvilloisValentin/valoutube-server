@@ -9,8 +9,9 @@
   "type": "module",
   "scripts": {
     "start": "nodemon index.js",
-    "start:prod": "node build/index.js",
-    "build": "npm run clean && npm run compile"
+    "start:prod": "npm run build && node build/index.js",
+    "build": "npm run clean && npm run compile",
+    "clean": "rmdir /s /q build"
   },
   "author": "",
   "license": "ISC",
